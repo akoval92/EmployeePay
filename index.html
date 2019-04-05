@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>TrainSchedule</title>
+    <title>EmployeePage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Cinzel:900" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -22,13 +22,28 @@
         </div>
     </div>
 
-
-    <div class="card">
-        <div class="card-header">
+    <div class="container">
             <h4>Current Employees</h4>
-        </div>
-        
-    </div>
+            <div class="container border border-dark rounded">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Employee Name</th>
+                            <th scope="col">Role</th>
+                            <th scope="col">Start Date(mm/dd/yyyy)</th>
+                            <th scope="col">Monthly Rate($)</th>
+                            <th scope="col">Total Billed($)</th>
+                        </tr>
+                    </thead>
+     
+                    <tbody id="employeeInfo"></div>
+     
+                    </tbody>
+     
+                </table>
+            </div>
+
+
 
     <br>
     <br>
@@ -42,31 +57,31 @@
             <h4>Add Employee</h4>
         </div>
 
-        <ul class="list-group list-group-flush">
+        <ul class="list-group list-group-flush" style="list-style: none;">
             <div class="form-group">
-                <label for="userTrainInput"></label>
+                <label for="addEmployee"></label>
                 <li>
-                    <label for="trainName">Employee Name</label>
-                    <form><input id="trainName" type="text" class="form-control"></form>
+                    <label for="employeeName">Employee Name</label>
+                    <form><input id="employeeName" type="text" class="form-control"></form>
                 </li>
 
                 <li>
-                    <label for="dest">Role</label>
-                    <form><input id="dest" type="text" class="form-control"></form>
+                    <label for="role">Role</label>
+                    <form><input id="role" type="text" class="form-control"></form>
                 </li> 
 
                 <li>
-                    <label for="firstTrain">Start Date</label>
-                    <form><input id="firstTrain" type="text" class="form-control"></form>
+                    <label for="startDate">Start Date(mm/dd/yyyy)</label>
+                    <form><input id="startDate" type="text" class="form-control"></form>
                 </li>   
                 
                 <li>
-                    <label for="freq">Monthly Rate($)</label>
-                    <form><input id="freq" type="text" class="form-control"></form>
+                    <label for="rate">Monthly Rate($)</label>
+                    <form><input id="rate" type="text" class="form-control"></form>
                 </li>
                 <li>
-                    <label for="freq">Total Billed($)</label>
-                    <form><input id="freq" type="text" class="form-control"></form>
+                    <label for="billed">Total Billed($)</label>
+                    <form><input id="billed" type="text" class="form-control"></form>
                 </li>
             </ul>
 
