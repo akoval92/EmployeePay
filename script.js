@@ -24,6 +24,12 @@ $(document).ready(function() {
         tRow.append(employeeTd, roleTd, startDateTd, monthlyRateTd, totalTd);
     }
 
+    var name = '';
+    var role = '';
+    var startDate = '';
+    var rate = 0;
+    var billed = 0;
+
     $('#submit').on('click', function(event) {
         event.preventDefault();
     
@@ -37,6 +43,7 @@ $(document).ready(function() {
             name: name,
             role: role,
             startDate: startDate,
+            rate: rate,
             billed: billed
         });
 
